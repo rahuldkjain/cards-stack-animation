@@ -1,0 +1,72 @@
+.know-more {
+  font-size: smaller;
+  pointer-events: none;
+}
+.card-container {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: 256px;
+  font-size: 16px;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid black;
+  border-bottom: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.line-svg {
+  width: 100%;
+  stroke-dasharray: 2.5;
+  stroke-dashoffset: 2.9;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.row-start {
+  align-items: flex-start;
+}
+.hr-1 {
+  margin-bottom: 10px;
+  font-size: smaller;
+  color: dodgerblue;
+  font-weight: 700;
+}
+.hr-1-title {
+  font-weight: 500;
+}
+.hr-2 {
+  margin-bottom: 10px;
+  font-size: medium;
+  font-weight: 700;
+}
+.meta-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+}
+.title {
+  text-transform: uppercase;
+  font-size: small;
+  font-weight: 700;
+}
+.subtitle {
+  font-size: small;
+  font-weight: 500;
+}
+.meta-section {
+  padding-top: 40px;
+}
+
+.meta {
+  margin-top: 10px;
+}
