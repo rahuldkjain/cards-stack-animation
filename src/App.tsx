@@ -27,14 +27,14 @@ const CARD_STACK_MARGIN = 80;
 const DURATION = 300;
 const CARD_HEIGHT = 256;
 const BASE_Z_INDEX = 9;
-const to = (i: number) => ({
-  y: i * CARD_STACK_MARGIN,
-  scale: 1,
-  zIndex: i + BASE_Z_INDEX,
-  x: 0,
-  rotateZ: 0,
-  transformOrigin: "center",
-});
+// const to = (i: number) => ({
+//   y: i * CARD_STACK_MARGIN,
+//   scale: 1,
+//   zIndex: i + BASE_Z_INDEX,
+//   x: 0,
+//   rotateZ: 0,
+//   transformOrigin: "center",
+// });
 const from = (i: number) => ({
   y: -500,
   scale: 1,
