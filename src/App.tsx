@@ -1,9 +1,9 @@
 import { useRef } from "react";
-import "./App.css";
 import { useSpring, animated, useSprings, config } from "react-spring";
 import BillCard from "./components/Card";
 import { CARDS } from "./constants/common";
 import Copyright from "./components/Copyright";
+import "./App.css";
 
 const springConfig = {
   tension: 350,
@@ -12,6 +12,7 @@ const springConfig = {
   velocity: 0.001,
   clamp: true,
 };
+
 const POSITION_MULTIPLIER_CONFIG = {
   active: 1.8,
   before: {
@@ -23,18 +24,12 @@ const POSITION_MULTIPLIER_CONFIG = {
     rest: 1.8,
   },
 };
+
 const CARD_STACK_MARGIN = 80;
 const DURATION = 300;
 const CARD_HEIGHT = 256;
 const BASE_Z_INDEX = 9;
-// const to = (i: number) => ({
-//   y: i * CARD_STACK_MARGIN,
-//   scale: 1,
-//   zIndex: i + BASE_Z_INDEX,
-//   x: 0,
-//   rotateZ: 0,
-//   transformOrigin: "center",
-// });
+
 const from = (i: number) => ({
   y: -500,
   scale: 1,
@@ -43,6 +38,7 @@ const from = (i: number) => ({
   transformOrigin: "center",
   zIndex: i + BASE_Z_INDEX,
 });
+
 const getWrapperHeight = () => {
   let height = 0;
   if (CARDS.length > 1) {
@@ -52,6 +48,7 @@ const getWrapperHeight = () => {
   }
   return height;
 };
+
 function App() {
   const order = useRef(CARDS.map((_, index) => index));
   const [wrapperSpring, setWrapperSpring] = useSpring(() => ({
